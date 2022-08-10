@@ -1,5 +1,4 @@
 fun main() {
-    var product = "iMac"
-    product = "Iphone"
+    val product = "iMac"
     println(product)
 }
