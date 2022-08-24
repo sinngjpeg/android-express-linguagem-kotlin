@@ -12,10 +12,14 @@ fun main() {
     val int: Int = 32 // 32 bit (usado 99% do tempo)
     val long : Long = 123185648949789798 // 64 bit
 
+    // BOOLEANO (true | false)
+    val booleano = true // 1 byte
+
 
     val price: Double = 31.90 // 64 bit ponto flutuante (floating point)
     val product: String = "iMac"
     val age: Int = 31
+
 
     println(preco)
     println(price)
