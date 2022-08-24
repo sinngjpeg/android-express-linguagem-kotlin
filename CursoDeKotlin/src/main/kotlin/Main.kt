@@ -15,6 +15,12 @@ fun main() {
     // BOOLEANO (true | false)
     val booleano = true // 1 byte
 
+    // PADRAO CAMEL CASE (voceDeveEscreverDessaManeira)
+    val mediaDePreco = 22
+
+    // . apos uma variavel instrucoes e comandos
+    val resposta = mediaDePreco.toDouble()
+    println(resposta)
 
     val price: Double = 31.90 // 64 bit ponto flutuante (floating point)
     val product: String = "iMac"
