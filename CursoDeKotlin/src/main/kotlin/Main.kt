@@ -3,18 +3,40 @@ fun main() {
 
     // int, double, string, byte, long, float, boolean
 
-    //criptografia
-    // char
+    // formatacao de textos
 
+    //1.
+    val massage = "Ola Sinng.\nSeu produto chegou!"
+    println(massage)
 
-    val name = "Sinng Chuk" // Objeto=tipo
-    val tamanhoDoNome = name.length // acessar a prorpiedade de um objeto (String)
-    println(tamanhoDoNome)
-    println("Ola Pessoal".length)
+    //2.
+    val welcome = """
+        Ola Tiago,
+        Seu produto chegou!
+    """.trimIndent()
+    println(welcome)
 
-    val novoNome = name.uppercase() // funcao que muda o comportamento de um objeto (string)
-    println(novoNome)
-    val novoNome2 = name.lowercase()
-    println(novoNome2)
+    //3.
+    val text = """
+        Texto1,
+        Texto2,
+        Texto3
+    """.replaceIndent(";")
+    println(text)
+
+    //4.
+    val name = "Tiago"
+    val age = 31
+    val price = 19.90
+    println("ola, " + name + ", sua idade é " + age + ", seu desconto é " + price)
+    println("Olá, $name. Sua idade é $age. Seu desconto é: $price")
+
+    val idadeComDez = age + 10
+
+    println("Olá, $name. Sua idade é $idadeComDez. Seu desconto é: $price")
+    println("Olá, $name. Sua idade é ${age + 11}. Seu desconto é: $price")
+
+    println("Olá, $name. Sua idade é ${age + 11}. Seu desconto é: $price e seu nome tem ${name.length} caracteres")
+
 
 }
