@@ -1,15 +1,8 @@
 fun main() {
- //GLOSSARIO (var, val, fun, class, double, String, int, false, true)
+    //GLOSSARIO (var, val, fun, class, double, String, int, false, true)
 
-    val numero = "10" + "10"
+    // NUMEROS GRANDES
+    val numero : Long = 1_123_321_123
     println(numero)
-
-    val numero2 = 1 + 1
-    println(numero2)
-
-    val resposta = numero2.toString()
-    println(numero2)
-
-
 
 }
