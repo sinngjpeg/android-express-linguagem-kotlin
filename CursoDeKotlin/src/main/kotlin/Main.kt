@@ -3,40 +3,54 @@ fun main() {
 
     // int, double, string, byte, long, float, boolean
 
-    // formatacao de textos
 
-    //1.
-    val massage = "Ola Sinng.\nSeu produto chegou!"
-    println(massage)
+    // CONDICOES (CONTROLE DE FLUXO) - deve ser uma expressao booleana
+    // ( < , > , <= , =>, !, ==, !=)
 
-    //2.
-    val welcome = """
-        Ola Tiago,
-        Seu produto chegou!
-    """.trimIndent()
-    println(welcome)
+    val produto = "iPhone"
 
-    //3.
-    val text = """
-        Texto1,
-        Texto2,
-        Texto3
-    """.replaceIndent(";")
-    println(text)
+    // se, senão if else
+    if (produto.length < 3) {
+        println("Você não pode cadastrar produtos com nomes pequenos")
+    } else {
+        println("Produto cadastrado com sucesso")
+    }
 
-    //4.
-    val name = "Tiago"
-    val age = 31
-    val price = 19.90
-    println("ola, " + name + ", sua idade é " + age + ", seu desconto é " + price)
-    println("Olá, $name. Sua idade é $age. Seu desconto é: $price")
+    if (!(produto.length < 3)) {
+        println("Produto cadastrado com sucesso")
 
-    val idadeComDez = age + 10
+    } else {
+        println("Você não pode cadastrar produtos com nomes pequenos")
+    }
 
-    println("Olá, $name. Sua idade é $idadeComDez. Seu desconto é: $price")
-    println("Olá, $name. Sua idade é ${age + 11}. Seu desconto é: $price")
+    if (produto.length == 0) {
+        println("Você não pode cadastrar produtos com nomes pequenos")
+    } else {
+        println("Produto cadastrado com sucesso")
+    }
 
-    println("Olá, $name. Sua idade é ${age + 11}. Seu desconto é: $price e seu nome tem ${name.length} caracteres")
+    if (produto.length != 0) {
+        println("Você não pode cadastrar produtos com nomes pequenos")
+    } else {
+        println("Produto cadastrado com sucesso")
+    }
+
+    val preco = 20_000
+    if (preco > 30_000) {
+        println("voce ganhou 30% de desconto")
+    } else if (preco > 20_00) {
+        println("voce ganhou 20% de desconto")
+    } else {
+        println("voce nao ganhou desconto")
+    }
+
+
+    val idade = 31
+    if (idade > 30) {
+        println("tenho mais de 30")
+    } else {
+        println("terminou")
+    }
 
 
 }
