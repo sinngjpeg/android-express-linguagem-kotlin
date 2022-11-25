@@ -5,52 +5,32 @@ fun main() {
 
 
     // CONDICOES (CONTROLE DE FLUXO) - deve ser uma expressao booleana
-    // ( < , > , <= , =>, !, ==, !=)
+    // ( < , > , <= , =>, !, ==, !=, &&, ||)
 
-    val produto = "iPhone"
+    // E
+    // TRUE | TRUE = TRUE
+    // TRUE | FALSE = FALSE
+    // FALSE | TRUE = FALSE
+    // FALSE | FALSE  = FALSE
 
-    // se, senão if else
-    if (produto.length < 3) {
-        println("Você não pode cadastrar produtos com nomes pequenos")
+    //OU
+    // TRUE | TRUE = TRUE
+    // TRUE | FALSE = TRUE
+    // FALSE | TRUE = TRUE
+    // FALSE | FALSE = FALSE
+
+    val produto = "Teclado"
+    val preco = 49
+
+    if (preco == 49 && produto == "Teclado") {
+        println("sucesso")
     } else {
-        println("Produto cadastrado com sucesso")
+        println("falha")
     }
 
-    if (!(produto.length < 3)) {
-        println("Produto cadastrado com sucesso")
-
+    if (preco == 49 || produto == "Teclado") {
+        println("sucesso")
     } else {
-        println("Você não pode cadastrar produtos com nomes pequenos")
+        println("falha")
     }
-
-    if (produto.length == 0) {
-        println("Você não pode cadastrar produtos com nomes pequenos")
-    } else {
-        println("Produto cadastrado com sucesso")
-    }
-
-    if (produto.length != 0) {
-        println("Você não pode cadastrar produtos com nomes pequenos")
-    } else {
-        println("Produto cadastrado com sucesso")
-    }
-
-    val preco = 20_000
-    if (preco > 30_000) {
-        println("voce ganhou 30% de desconto")
-    } else if (preco > 20_00) {
-        println("voce ganhou 20% de desconto")
-    } else {
-        println("voce nao ganhou desconto")
-    }
-
-
-    val idade = 31
-    if (idade > 30) {
-        println("tenho mais de 30")
-    } else {
-        println("terminou")
-    }
-
-
 }
